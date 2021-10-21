@@ -11,7 +11,7 @@
     * industry
     * sport
     * famous-people
-* Add some padding to each block.
+* Add some padding to each block. It's probably a good idea to also change the ```box-sizing``` to be ```border-box```. This tells the browser to include padding and borders in the width of elements. See https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing for more info.
 
 * Add a viewport meta tag to the head of document.
 ```
@@ -28,7 +28,19 @@
     ```
   * Refresh the page in a browse and test this works
 * Now think about how the layout might change when the screen size is wider
-  * Use the CSS flexbox to try and create a two columned design.
+  * Use the CSS flexbox to try and create a two columned design. Something like the following would work well:
+  ```
+  .holder{
+     display:flex;
+     flex-flow: row wrap;
+   }
+  .img_holder, .intro, .industry, .sport{
+     width:50%;
+   }
+  .famous-people{
+     width:100%;
+   }
+  ```
 * At some point when the screen size is really wide (greater than about 900px) we don't want the design to re-size any further. Create another breakpoint so that when the screen size is bigger than 900px the design doesn't get any bigger.
 * Now turn your attention to the image.
   * You might find that at some points it overlaps other page elements. Have a look at using the *max-width* property to see if you can make the image stay within it's container.
