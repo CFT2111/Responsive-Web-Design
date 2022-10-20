@@ -17,7 +17,7 @@
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
-
+* Refresh the page and make sure you can see the effect of the viewport tag.
 * Now think about using some simple media queries to specify additional CSS rules
   * Using the browser resize the page and pick a breakpoint. As a guideline, a column should be approx. 8-10 words in width.
   * Create a new CSS file
@@ -32,7 +32,7 @@
   ```
   .holder{
      display:flex;
-     flex-flow: row wrap;
+     flex-flow: row wrap; /* specifies that child elements should wrap onto the next line */
    }
   .img_holder, .intro, .industry, .sport{
      width:50%;
