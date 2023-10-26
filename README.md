@@ -46,4 +46,5 @@
   * You might find that at some points it overlaps other page elements. Have a look at using the *max-width* property to see if you can make the image stay within it's container.
   * It would be good if the image was centred when in a single columned design. Add some CSS so that image always sits in the centre of the design.
   * If you look in the images folder, you should be able to find a larger version of the Northumberland Street image. have a look at using the *picture* element to use the larger image when in the two-columned layout.
+
 * Finally, have a think about how long it takes webpages to load. Visit https://pagespeed.web.dev/ and enter the URLs of some websites. Most big name websites will be optimised to load fast. Can you find one that fails the assessment. Follow the links e.g. for Largest Contentful Paint to try and understand what is meant by some of the metrics used.
